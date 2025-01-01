@@ -1,7 +1,7 @@
 import express from 'express';
 import session from 'express-session';
 import { SESSION_SECRET } from './config/constants';
-import { router } from './routes';
+import { router } from './routes/index';
 import { createTestUser } from './services/auth';
 import { typedDb } from './database/db';
 

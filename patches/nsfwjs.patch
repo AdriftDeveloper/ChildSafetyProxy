@@ -1,0 +1,13 @@
+diff --git a/dist/esm/index.js b/dist/esm/index.js
+index 5cd9e37889c58a1735fd0ca82d01232dd67e4f1a..29c70940490616de30f68f97170ce2a15ca327b2 100644
+--- a/dist/esm/index.js
++++ b/dist/esm/index.js
+@@ -44,7 +44,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+     return to.concat(ar || Array.prototype.slice.call(from));
+ };
+ import * as tf from "@tensorflow/tfjs";
+-import { Buffer } from "buffer/";
++import { Buffer } from "buffer";
+ import { NSFW_CLASSES } from "./nsfw_classes.js";
+ var availableModels = {
+     MobileNetV2: { numOfWeightBundles: 1 },

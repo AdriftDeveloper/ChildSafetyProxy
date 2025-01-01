@@ -28,7 +28,7 @@ export async function checkNSFW(buffer: Buffer): Promise<boolean> {
     return predictions.some(
       (p) =>
         (p.className === "Porn" || p.className === "Hentai") &&
-        p.probability > 0.5
+        p.probability > 0.80
     );
   } catch (error) {
     console.error("Error checking NSFW content:", error);
